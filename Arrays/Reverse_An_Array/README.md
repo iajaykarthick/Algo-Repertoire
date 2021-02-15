@@ -7,6 +7,8 @@ start = 0
 end = length(arr) - 1
 while start < end {
     swap -> arr[start] and arr[end]
+    start++
+    end--
 }
 ```
 
