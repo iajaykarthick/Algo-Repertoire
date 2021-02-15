@@ -1,5 +1,12 @@
 # Algo-Repertoire
 
+## SubTopics:
+* [Arrays](Arrays/)
+  * [Reverse An Array](Arrays/Reverse_An_Array/)
+
+
+## Random - Yet to be categorized
+
 * [Add one to list of integers considered as a single integer](Add_One_list_considered_as_integer.py)<br>
 * [Add two numbers whose each digits stored in a linked list](AddTwoNumbers_LinkedList.py)<br>
 * [String of binary number - Left Rotation](BinaryString_LeftRotation.py)<br>
