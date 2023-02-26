@@ -20,7 +20,7 @@ Two types:
 - ## Linear homogeneous recurrences
     A linear recurrence is homogeneous if f(n) = 0
 
-    $a_n = c_1 a_{n-1} + c_2 a_{n-2} + ... + c_k a_{n-k}$ ... (1)
+    $a_n = c_1 a_{n-1} + c_2 a_{n-2} + ... + c_k a_{n-k}$  ............. (1)
 
     where $c_1, c_2, .. c_k$ are real numbers and $c_k \ne 0$
 
