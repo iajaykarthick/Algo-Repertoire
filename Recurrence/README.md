@@ -57,4 +57,10 @@ $b_n = c_1 b_{n-1} + c_2 b_{n-2}... + c_k b_{n-k}$
 
 So, $b_n$ satisfies the recurrence.
 
+$d_n = \alpha a_n$
+
+$d_n = \alpha (c_1 a_{n-1} + c_2 a_{n-2} + ... + c_k a_{n-k})$
+
+$d_n = (c_1 (\alpha a_{n-1}) + c_2 (\alpha a_{n-2}) + ... + c_k (\alpha a_{n-k}))$
+
 - ## Linear non-homogeneous recurrences
