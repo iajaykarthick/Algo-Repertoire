@@ -49,6 +49,6 @@ There may be many sequences that satisfy the linear homogeneous recurrence equat
 #### Proof
 $b_n = a_{n} + a_{n}^{\prime}$
 
-$   = (c_1 a_{n-1} + c_2 a_{n-2} + ... + c_k a_{n-k}) + (c_1 a_{n-1}^{\prime})$
+$= (c_1 a_{n-1} + c_2 a_{n-2} + ... + c_k a_{n-k}) + (c_1 a_{n-1}^{\prime} + c_2 a_{n-2}^{\prime} + ... + c_k a_{n-k}^{\prime})$
 
 - ## Linear non-homogeneous recurrences
