@@ -36,6 +36,6 @@ Two types:
 
 
 ### Solving Linear Homogeneous Recurrences
-
+A closed formula for a sequence $(a_n)_{n \in N}$ is a formula for  using a fixed finite number of operations on $n$.
 
 - ## Linear non-homogeneous recurrences
