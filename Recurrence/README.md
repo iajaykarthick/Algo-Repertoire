@@ -5,7 +5,7 @@ $\Rightarrow$ $a_{n} = f(a_{n-1}, ..., a_{n-k}) = c_1 a_{n-1} + ... + c_k a_{n-k
 
 The order of linear recurrence relation is determined by "k". 
 
-The $a_n$ is defined in terms of previous "k" terms of the sequence, so its degree is "k".
+The $a_n$ is defined in terms of previous "k" terms of the sequence, so its degree is "k". 
 
 This type of recurrence comes with "k" base cases that specify the values for $a_0, a_1, ... a_{k-1}$.
 
@@ -16,13 +16,15 @@ Second order | f($a_{n-1}, a_{n-2}$) |
 Third order | f($a_{n-1}, a_{n-2}, a_{n-3}$) |
 $k^{th}$ order | f($a_{n-1}, a_{n-2}, a_{n-3}, ... , a_{n-k}$) |
 
+First order - depends on only one previous term. (aka degree 1)
+
 Two types:
 - ## Linear homogeneous recurrences
     A linear recurrence is homogeneous if f(n) = 0
 
     $a_n = c_1 a_{n-1} + c_2 a_{n-2} + ... + c_k a_{n-k}$
 
-    where $c_1, c_2, .. c_k$ are real numbers and $c_k \ne 0$
+    where $c_1, c_2, .. c_k$ are real numbers (constant coefficients) and $c_k \ne 0$
 
 - **Examples**
 
@@ -71,8 +73,15 @@ So, $d_n$ satisfies the recurrence.
 
 Hence if we find some solution to a linear homogeneous recurrence, then any linear combination of them will also be a solution to the linear homogeneous recurrence.
 
-It is relatively easy to find some solutions to a linear homogeneous recurrence and then linearly combine them by adding them together, or multiplying them by constants in order to make them "fit" with the particular base cases that we are interested in.
+It is relatively easy to find some solutions to a linear homogeneous recurrence and then linearly combine them by adding them together or multiplying them by constants in order to make them "fit" with the particular base cases that we are interested in.
 
 ---
 
-- ## Linear non-homogeneous recurrences
+Geometric sequence come up a lot when solving linear homogeneous recurrences. 
+
+For example, let us consider one example of first order linear homogeneous recurrence as follows and try to solve:
+
+Example: $a_n = \begin{cases}
+0 if n = 0 \\
+2 a_n{-1} if n \geq 1
+ \end{cases}$
