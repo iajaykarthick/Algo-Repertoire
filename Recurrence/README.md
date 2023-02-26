@@ -82,7 +82,7 @@ Geometric sequence come up a lot when solving linear homogeneous recurrences.
 For example, let us consider one example of first order linear homogeneous recurrence as follows and try to solve:
 
 Example: 
-$$a_n = \begin{cases}
+$a_n = \begin{cases}
 0 if n = 0 \\
 2 a_n{-1} if n \geq
- \end{cases}$$
+ \end{cases}$
