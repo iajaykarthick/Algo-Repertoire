@@ -47,7 +47,7 @@ There may be many sequences that satisfy the linear homogeneous recurrence equat
 * So, $b_n = a_n + a_{n}^{\prime}$ and $d_n = \alpha a_n$ are also sequences that satisfy the recurrence. ($\alpha$ is any constant.)
 
 #### Proof
-$b_n = a_{n}^{\prime}$
+$b_n = a_{n} + a_{n}^{\prime}$
 
 
 - ## Linear non-homogeneous recurrences
