@@ -18,7 +18,9 @@ $k^{th}$ order | f($a_{n-1}, a_{n-2}, a_{n-3}, ... , a_{n-k}$) |
 
 Two types:
 - ## Linear homogeneous recurrences
-    - if f(n) = 0 and $c_k \ne 0$ 
+    - A linear recurrence is linear if f(n) = 0
+
+    $a_n = c_1 a_{n-1} + c_2 a_{n-2} + ... + c_k a_{n-k}$
 
 
 
