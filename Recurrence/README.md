@@ -71,6 +71,8 @@ So, $d_n$ satisfies the recurrence.
 
 Hence if we find some solution to a linear homogeneous recurrence, then any linear combination of them will also be a solution to the linear homogeneous recurrence.
 
+It is relatively easy to find some solutions and then linearly combine them by adding them or multiplying them by constants in order to make them "fit" with the particular base cases that we are interested in.
+
 ---
 
 - ## Linear non-homogeneous recurrences
