@@ -83,3 +83,7 @@ For example, let us consider one example of first order linear homogeneous recur
 
 Example: 
 $a_0 = 1$, $a_n = 2 a_{n-1} \text{ if } n \geq 1$
+
+We can see that this produces sequence $1, 2, 4, 8, 16,...$ which is a gemometric progression with common ration $r = 2$.
+
+The recursive formula $a_n = r * a_{n-1}$ becomes the explicit function $a_n = a_1 * r^{n-1}$.
