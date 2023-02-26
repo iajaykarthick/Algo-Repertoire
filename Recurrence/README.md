@@ -68,7 +68,7 @@ $d_n = c_1 d_{n-1} + c_2 d_{n-2} + ... + c_k d_{n-k}$
 So, $d_n$ satisfies the recurrence.
 
 ---
-**NOTE**
+
 Hence if we find some solution to a linear homogeneous recurrence, then any linear combination of them will also be a solution to the linear homogeneous recurrence.
 
 ---
