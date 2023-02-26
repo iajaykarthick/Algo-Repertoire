@@ -32,7 +32,7 @@ Two types:
 Not linear and not linear homogeneous (Examples)
 * $a_n = a_{n-2} + a_{n-4}^2$ is not linear
 * $a_n = a_{n-1} + 1$ is not linear homogeneous
-* $a_n = na_{n-1}$ is not linear
+* $a_n = na_{n-1}$ is not linear as it doesn't have constant coefficient
 
 
 
