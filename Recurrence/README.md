@@ -82,5 +82,4 @@ Geometric sequence come up a lot when solving linear homogeneous recurrences.
 For example, let us consider one example of first order linear homogeneous recurrence as follows and try to solve:
 
 Example: 
-$a_n = 2 a_n{-1} \text{ if } n \geq 1$
-$a_0 = 1$
+$a_n = 2 a_n{-1} \text{ if } n \geq 1$, $a_0 = 1$
