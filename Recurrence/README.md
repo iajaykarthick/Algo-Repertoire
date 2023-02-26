@@ -44,5 +44,10 @@ There may be many sequences that satisfy the linear homogeneous recurrence equat
 * Let $a_n = c_1 a_{n-1} + c_2 a_{n-2} + ... + c_k a_{n-k}$ be a linear homogeneous recurrence.
 * Assume the sequence $a_n$ satisfies the recurrence.
 * Assume another sequence $a_{n}^{\prime}$ also satisfies the recurrence.
+* So, $b_n = a_n + a_{n}^{\prime}$ and $d_n = \alpha a_n$ are also sequences that satisfy the recurrence. ($\alpha is any constant.$)
+
+#### Proof
+$b_n = a_{n}^{\prime}$
+
 
 - ## Linear non-homogeneous recurrences
