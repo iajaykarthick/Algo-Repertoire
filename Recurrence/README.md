@@ -7,6 +7,10 @@ The order of linear recurrence relation is determined by "k". The $a_n$ is defin
 
 This type of recurrence comes with "k" base cases that specify the values for $a_0, a_1, ... a_{k-1}$.
 
+Order | $a_n$ |
+--- | --- | 
+First order | f($a_{n-1}$) |
+
 Two types:
 - Linear homogeneous recurrences
     - if f(n) = 0
