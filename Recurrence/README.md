@@ -56,4 +56,6 @@ $b_n = c_1 (a_{n-1} + a_{n-1}^{\prime}) + c_2 (a_{n-2} + a_{n-2}^
 
 $b_n = c_1 b_{n-1} + c_2 b_{n-2}... + c_k b_{n-k}$
 
+So, $b_n$ satisfies the recurrence.
+
 - ## Linear non-homogeneous recurrences
