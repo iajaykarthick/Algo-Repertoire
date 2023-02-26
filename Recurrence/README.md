@@ -51,4 +51,6 @@ $b_n = a_{n} + a_{n}^{\prime}$
 
 $b_n = (c_1 a_{n-1} + c_2 a_{n-2} + ... + c_k a_{n-k}) + (c_1 a_{n-1}^{\prime} + c_2 a_{n-2}^{\prime} + ... + c_k a_{n-k}^{\prime})$
 
+$b_n = c_1 (a_{n-1} + a_{n-1}^{\prime}) + c_2 (a_{n-2} + a_{n-2}^{\prime})... + c_k (a_{n-k} + a_{n-k}^{\prime}) $
+
 - ## Linear non-homogeneous recurrences
