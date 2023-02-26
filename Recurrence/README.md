@@ -20,7 +20,7 @@ Two types:
 - ## Linear homogeneous recurrences
     A linear recurrence is homogeneous if f(n) = 0
 
-    $a_n = c_1 a_{n-1} + c_2 a_{n-2} + ... + c_k a_{n-k}$                (1)
+    $a_n = c_1 a_{n-1} + c_2 a_{n-2} + ... + c_k a_{n-k}$
 
     where $c_1, c_2, .. c_k$ are real numbers and $c_k \ne 0$
 
@@ -38,6 +38,11 @@ Two types:
 ### Solving Linear Homogeneous Recurrences
 A closed formula for a sequence $(a_n)_{n \in N}$ is a formula for  using a fixed finite number of operations on $n$.
 
+There may be many sequences that satisfy the linear homogeneous recurrence equation. There will be different sequence for each possible set of base cases.
 
+#### Proposition
+* Let $a_n = c_1 a_{n-1} + c_2 a_{n-2} + ... + c_k a_{n-k}$ be a linear homogeneous recurrence.
+* Assume the sequence $a_n$ satisfies the recurrence.
+* Assume another sequence $a_{n}^{\prime}$ also satisfies the recurrence.
 
 - ## Linear non-homogeneous recurrences
