@@ -63,7 +63,7 @@ $d_n = \alpha (c_1 a_{n-1} + c_2 a_{n-2} + ... + c_k a_{n-k})$
 
 $d_n = (c_1 (\alpha a_{n-1}) + c_2 (\alpha a_{n-2}) + ... + c_k (\alpha a_{n-k}))$
 
-$d_n = (c_1 d_{n-1} + c_2 d_{n-2} + ... + c_k d_{n-k})$
+$d_n = c_1 d_{n-1} + c_2 d_{n-2} + ... + c_k d_{n-k}$
 
 So, $d_n$ satisfies the recurrence.
 
