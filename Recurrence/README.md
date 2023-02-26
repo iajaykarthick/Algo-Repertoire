@@ -22,6 +22,8 @@ Two types:
 
     $a_n = c_1 a_{n-1} + c_2 a_{n-2} + ... + c_k a_{n-k}$
 
+    where $c_1, c_2, .. c_k$ are real numbers and $c_k \ne 0$
+
 
 
 - Linear non-homogeneous recurrences
