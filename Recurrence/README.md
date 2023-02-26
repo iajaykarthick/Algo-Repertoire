@@ -17,7 +17,9 @@ Third order | f($a_{n-1}, a_{n-2}, a_{n-3}$) |
 $k^{th}$ order | f($a_{n-1}, a_{n-2}, a_{n-3}, ... , a_{n-k}$) |
 
 Two types:
-- Linear homogeneous recurrences
+- ## Linear homogeneous recurrences
     - if f(n) = 0 and $c_k \ne 0$ 
+
+
 
 - Linear non-homogeneous recurrences
