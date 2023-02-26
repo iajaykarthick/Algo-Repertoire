@@ -10,6 +10,7 @@ This type of recurrence comes with "k" base cases that specify the values for $a
 Order | $a_n$ |
 --- | --- | 
 First order | f($a_{n-1}$) |
+Second order | f($a_{n-1}, a_{n-2}$) |
 
 Two types:
 - Linear homogeneous recurrences
