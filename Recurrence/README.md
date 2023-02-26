@@ -12,7 +12,7 @@ Order | $a_n$ |
 First order | f($a_{n-1}$) |
 Second order | f($a_{n-1}, a_{n-2}$) |
 Third order | f($a_{n-1}, a_{n-2}, a_{n-3}$) |
-K$^{th}$ order | f($a_{n-1}, a_{n-2}, a_{n-3}, ... , a_{n-k}$) |
+$k^{th}$ order | f($a_{n-1}, a_{n-2}, a_{n-3}, ... , a_{n-k}$) |
 
 Two types:
 - Linear homogeneous recurrences
