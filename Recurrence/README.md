@@ -24,6 +24,16 @@ Two types:
 
     where $c_1, c_2, .. c_k$ are real numbers and $c_k \ne 0$
 
+### Examples
+
+* $a_n = a_{n-1} + a_{n-2}$ (order 2)
+* $a_n = a_{n-6}$ (order 6)
+
+Not linear and not linear homogeneous (Examples)
+* $a_n = a_{n-2} + a_{n-4}^2$ is not linear
+* $a_n = a_{n-1} + 1$ is not linear homogeneous
+* $a_n = na_{n-1}$ is not linear
 
 
-- Linear non-homogeneous recurrences
+
+- ## Linear non-homogeneous recurrences
