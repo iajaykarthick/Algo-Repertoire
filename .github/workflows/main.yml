@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: igor-kupczynski/notion-exporter@v1.0.2
         with:
-          pages: "Discrete-Mathematics-3359e875cd344cf1aa629d378a19eff0"  # Pages IDs
+          pages: "3359e875cd344cf1aa629d378a19eff0"  # Pages IDs
           output-dir: discrete-math/notion-backup
           notion-token: ${{ secrets.NOTION_TOKEN }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
