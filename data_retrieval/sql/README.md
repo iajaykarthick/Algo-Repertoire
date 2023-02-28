@@ -1,4 +1,5 @@
- ## SELECT / RETRIEVE Kth ranked value.
+ ## SELECT / RETRIEVE Kth ranked value. 
+ [[Leetcode](https://leetcode.com/problems/second-highest-salary/)]
 
  select $k^{th}$ rank value (either $k^{th}$ maximum or $k^{th}$ minimum)
 
