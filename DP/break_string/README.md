@@ -7,3 +7,5 @@ Design an algorithm that, given the numbers of characters after which to break, 
 
 Similar problems:
 [Leetcode - 1547. Minimum Cost to Cut a Stick](https://leetcode.com/problems/minimum-cost-to-cut-a-stick/) 
+
+![](images/leetcode-1547.png)
