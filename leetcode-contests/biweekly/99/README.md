@@ -1,7 +1,9 @@
 
 ### 2578. Split With Minimum Sum
+<img src="https://img.shields.io/badge/Easy-555555.svg">
 
-[Solution](2578.%20Split%20With%20Minimum%20Sum.md)
+[Solution](2578.%20Split%20With%20Minimum%20Sum.md) 
+
 <div>
 <p>Given a positive integer <code>num</code>, split it into two non-negative integers <code>num1</code> and <code>num2</code> such that:</p>
 <ul>
@@ -16,6 +18,8 @@
 </div>
 
 ### 2579. Count Total Number of Colored Cells
+<img src="https://img.shields.io/badge/Medium-FFB84C.svg">
+
 [Solution ](2579.%20Count%20Total%20Number%20of%20Colored%20Cells.md)
 
 <div class="question-content default-content">
@@ -30,6 +34,8 @@
 </div>
 
 ### 2580. Count Ways to Group Overlapping Ranges
+<img src="https://img.shields.io/badge/Medium-FFB84C.svg">
+
 [Solution](2580.%20Count%20Ways%20to%20Group%20Overlapping%20Ranges.md)
 <div>
               <p>You are given a 2D integer array <code>ranges</code> where <code>ranges[i] = [start<sub>i</sub>, end<sub>i</sub>]</code> denotes that all integers between <code>start<sub>i</sub></code> and <code>end<sub>i</sub></code> (both <strong>inclusive</strong>) are contained in the <code>i<sup>th</sup></code> range.</p>
