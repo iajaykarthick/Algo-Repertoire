@@ -17,3 +17,13 @@
 
 ### 2579. Count Total Number of Colored Cells
 [Solution ](2579.%20Count%20Total%20Number%20of%20Colored%20Cells.md)
+
+<div class="question-content default-content">
+              <p>There exists an infinitely large two-dimensional grid of uncolored unit cells. You are given a positive integer <code>n</code>, indicating that you must do the following routine for <code>n</code> minutes:</p>
+<ul>
+	<li>At the first minute, color <strong>any</strong> arbitrary unit cell blue.</li>
+	<li>Every minute thereafter, color blue <strong>every</strong> uncolored cell that touches a blue cell.</li>
+</ul>
+<p>Below is a pictorial representation of the state of the grid after minutes 1, 2, and 3.</p>
+<img alt="" src="https://assets.leetcode.com/uploads/2023/01/10/example-copy-2.png" style="width: 500px; height: 279px;">
+<p>Return <em>the number of <strong>colored cells</strong> at the end of </em><code>n</code> <em>minutes</em>.</p>
