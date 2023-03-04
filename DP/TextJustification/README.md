@@ -24,16 +24,10 @@ Thus, there exists the optimal substructure.
 Let $C[j]$ be the minimum total cost of printing the words $1$ through $j$.  $C[j]$ is composed of the sum of the cost of the last line (that ends with word j) and the cost of previous lines. Let us consider the last line starts with $i$. Then $C[j]$ can be computed as follows:
 
 
-$$
-\begin{equation}
-C[j] = \begin{cases} 
-0   \text{ if j = 0} \\
-\displaystyle\min_{1  \leq i \leq j} C[i-1] + \text{ per\_line\_cost(i, j)  if j > 0 }
-\end{cases}$
+![Formula Image](./images/recursive_formula.png)
 
-Using this recursive function we can find the optimal starting word for the line ending word $j. 
-\end{equation}
-$$
+Using this recursive function we can find the optimal starting word for the line ending word $j$. 
+
 
 
 
