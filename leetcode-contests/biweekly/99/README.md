@@ -1,6 +1,6 @@
 ## 2578. Split With Minimum Sum 
 [Leetcode](https://leetcode.com/contest/biweekly-contest-99/problems/split-with-minimum-sum/)
-<div class="question-content default-content">
+<div>
               <p>Given a positive integer <code>num</code>, split it into two non-negative integers <code>num1</code> and <code>num2</code> such that:</p>
 
 <ul>
@@ -23,14 +23,14 @@
 </ul>
 
 <p>&nbsp;</p>
-<p><strong class="example">Example 1:</strong></p>
+<p><strong>Example 1:</strong></p>
 
 <pre><strong>Input:</strong> num = 4325
 <strong>Output:</strong> 59
 <strong>Explanation:</strong> We can split 4325 so that <code>num1 </code>is 24 and num2<code> is </code>35, giving a sum of 59. We can prove that 59 is indeed the minimal possible sum.
 </pre>
 
-<p><strong class="example">Example 2:</strong></p>
+<p><strong>Example 2:</strong></p>
 
 <pre><strong>Input:</strong> num = 687
 <strong>Output:</strong> 75
@@ -43,5 +43,4 @@
 <ul>
 	<li><code>10 &lt;= num &lt;= 10<sup>9</sup></code></li>
 </ul>
-
-            </div>
+</div>
