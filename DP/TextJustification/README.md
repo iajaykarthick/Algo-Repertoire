@@ -10,7 +10,7 @@ Give a dynamic-programming algorithm to print a paragraph of n words neatly on a
 ### Optimal Substructure Property
 The problem contains optimal substrcutre as follows:
 
-Consider there exists optimal solution of arranging the n words $1, 2, \dots n$   with minimum cost $(M - j + i - \displaystyle\sum_{k=i}^{l} l_k)^3$ over all the lines.
+Consider there exists an optimal solution of arranging the n words $1, 2, \dots n$   with minimum cost $(M - j + i - \displaystyle\sum_{k=i}^{l} l_k)^3$ over all the lines.
 
 Obviously the last line in the optimal solution ends with word $n$. Let the starting word of the last optimal line be word $m$.
 
@@ -21,7 +21,15 @@ Thus, there exists the optimal substructure.
 
 ### Recursive function
 
-Let $C[j]$ be the minimum cost of printing the words $1$ through $j$.  
+Let $C[j]$ be the minimum total cost of printing the words $1$ through $j$.  $C[j]$ is composed of the sum of the cost of the last line (that ends with word j) and the cost of previous lines. Let us consider the last line starts with $i$. Then $C[j]$ can be computed as follows:
+
+$C[j] = \begin{cases} 
+0   \text{ if j = 0} \\
+\displaystyle\min_{1  \leq i \leq j} C[i-1] + \text{ per\_line\_cost(i, j)  if j > 0 }
+\end{cases}$
+
+Using this recursive function we can find the optimal starting word for the line ending word $j$. 
+
 
 
 
