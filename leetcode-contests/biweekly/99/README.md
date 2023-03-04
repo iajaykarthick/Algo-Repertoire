@@ -1,5 +1,6 @@
-## 2578. Split With Minimum Sum 
-[Leetcode](https://leetcode.com/contest/biweekly-contest-99/problems/split-with-minimum-sum/)
+## 2578. Split With Minimum Sum [My Solution](#solution)
+[Leetcode](https://leetcode.com/contest/biweekly-contest-99/problems/split-with-minimum-sum/) 
+
 <div>
               <p>Given a positive integer <code>num</code>, split it into two non-negative integers <code>num1</code> and <code>num2</code> such that:</p>
 
@@ -38,3 +39,5 @@
 	<li><code>10 &lt;= num &lt;= 10<sup>9</sup></code></li>
 </ul>
 </div>
+
+## Solution
