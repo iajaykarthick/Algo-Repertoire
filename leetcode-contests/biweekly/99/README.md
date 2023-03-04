@@ -1,4 +1,4 @@
-## 2578. Split With Minimum Sum [My Solution](#solution)
+## 2578. Split With Minimum Sum
 [Leetcode](https://leetcode.com/contest/biweekly-contest-99/problems/split-with-minimum-sum/) 
 
 <div>
@@ -41,3 +41,36 @@
 </div>
 
 ## Solution
+
+Task : Split the digits of a number into two groups in any order and the natural number formed by the digits in each group, should sum up to a minimum value.
+
+Intuition: 
+To get the minimum sum, both summands(numbers) should be possible minimum. 
+To form the possible minimum number out of a set of digits, the most siginificant digit of the number gets the least valued digit and the least siginficant digit of the number should get the highest valued digit from the set of digits. In other words, the digits should be sorted in ascending order and then form the number.
+
+We need to form two numbers out of a set of digits.
+So, sort the digits in ascending order. Form the num1 and num2 using alternate digits in the sorted list. (left to right).
+
+```
+split_with_min_sum(num) {
+    nums = []
+    while num > 0
+        nums.append(num % 10)
+        num = num // 10
+    nums.sort()
+    n = len(nums)
+    i = 0
+    j = 0
+    num_1 = 0
+    num_2 = 0
+    while i < n-1 and j < n
+        num_1 = (num_1 * 10) + num_arr[i]
+        num_2 = (num_2 * 10) + num_arr[j]
+        i += 2
+        j += 2
+    if i < n
+        num_1 = (num_1 * 10) + num_arr[i]
+    return num_1 + num_2
+
+}
+```
