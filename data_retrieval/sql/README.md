@@ -45,3 +45,26 @@ BEGIN
   );
 END
  ```
+
+
+ ## 185. Department Top Three Salaries
+ [[Leetcode]( https://leetcode.com/problems/department-top-three-salaries/)]
+
+
+ ```
+WITH CTE AS (
+    SELECT  d.name as Department, 
+            e.name as Employee, 
+            e.salary as Salary, 
+            DENSE_RANK() OVER (
+                PARTITION BY d.id
+                ORDER BY e.salary DESC
+            ) AS salary_rank
+    FROM Department d
+    JOIN Employee e
+    ON d.id = e.departmentId
+)
+SELECT Department, Employee, Salary
+FROM CTE
+WHERE salary_rank < 4;
+ ```
