@@ -25,7 +25,7 @@ if not isExist:
 URL = "https://leetcode.com/api/problems/algorithms/"
 response = requests.get(URL)
 data = response.json()
-for question_stat in data['stat_status_pairs'][:10]:
+for question_stat in data['stat_status_pairs']:
     question = question_stat['stat']
     question_id = question['question_id']
     question_title = question['question__title']
