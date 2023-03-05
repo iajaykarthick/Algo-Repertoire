@@ -6,7 +6,7 @@ from lxml import etree
 options = Options()
 options.add_argument("--headless=new")
 driver = webdriver.Chrome(options=options)
-driver.get("https://leetcode.com/contest/weekly-contest-334/")
+driver.get("https://leetcode.com/problems/longest-palindromic-substring/")
 soup = BeautifulSoup(driver.page_source, "html.parser")
 links = []
 
