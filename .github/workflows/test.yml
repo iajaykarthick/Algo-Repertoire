@@ -14,10 +14,10 @@ jobs:
     - name: Install Python dependencies
       uses: py-actions/py-dependency-install@v4
       with:
-        path: "leetcode-contests/requirements.txt"
+        path: "leetcode-problems/questions-fetcher/requirements.txt"
     - name: Test
       run: |
-        python leetcode-contests/test.py
+        python leetcode-problems/questions-fetcher/questions-fetcher.py
         git config user.name iajaykarthick
         git config user.email ajaykarthick483@gmail.com
         git add .

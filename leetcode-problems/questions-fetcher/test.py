@@ -1,12 +1,12 @@
 import sys
-
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from bs4 import BeautifulSoup
+
+output_files_path = 'leetcode-problems/problems'
 
 options = Options()
 options.add_argument("--headless=new")
@@ -20,14 +20,14 @@ try:
     element = driver.find_element(By.XPATH, question_text_xpath)
     question_text = element.get_attribute('innerHTML')
     # Writing to file
-    with open("leetcode-contests/test.md", "w") as file1:
+    with open(f"{output_files_path}/test.md", "w") as file1:
         # Writing data to a file
         file1.write(question_text)
 except TimeoutException:
     print("Timed out waiting for page to load")
 
 # Writing to file
-with open("leetcode-contests/test.log", "w") as file1:
+with open("leetcode-problems/questions-fetcher/test.log", "w") as file1:
     # Writing data to a file
     file1.write("test")
 
