@@ -4,9 +4,10 @@ from bs4 import BeautifulSoup
 from lxml import etree
 
 options = Options()
-options.headless = True
+options.add_argument("--headless=new")
 driver = webdriver.Chrome(chrome_options=options)
 driver.get("https://leetcode.com/contest/weekly-contest-334/")
 soup = BeautifulSoup(driver.page_source, "html.parser")
-dom = etree.HTML(str(soup))
-print(dom.xpath('"//*[@id="contest-app"]/div/div/div[4]/div[1]/ul/li[1]'))
+for ul in soup.find_all('ul'):
+    print(ul)
+driver.quit()
