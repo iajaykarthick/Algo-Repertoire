@@ -36,7 +36,6 @@ for question_stat in data['stat_status_pairs'][:100]:
     
     driver = webdriver.Chrome(options=options)
     driver.get(URL)
-    time.sleep(10)
     timeout = 4
     try:
         element_present = EC.presence_of_element_located((By.XPATH, question_text_xpath))
@@ -52,7 +51,7 @@ for question_stat in data['stat_status_pairs'][:100]:
         print("Timed out waiting for page to load")
         
     driver.close()
-    time.sleep(10)
+    time.sleep(2)
 
 # Writing to file
 with open("leetcode-problems/questions-fetcher/logtrace.log", "w") as file1:
