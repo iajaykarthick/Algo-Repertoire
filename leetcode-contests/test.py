@@ -9,6 +9,7 @@ driver = webdriver.Chrome(options=options)
 driver.get("https://leetcode.com/contest/weekly-contest-334/")
 soup = BeautifulSoup(driver.page_source, "html.parser")
 links = []
+
 for li in soup.find_all('ul', {"class": "list-group hover-panel contest-question-list"})[0].find_all("li", {"class": "list-group-item"}):
     for a in li.find_all('a'):
         links.append(a['href'])
