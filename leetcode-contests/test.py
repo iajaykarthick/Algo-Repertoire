@@ -16,7 +16,7 @@ try:
     element_present = EC.presence_of_element_located((By.XPATH, question_text_xpath))
     WebDriverWait(driver, timeout).until(element_present)
     element = driver.find_element(By.XPATH, question_text_xpath)
-    print(element.get_attribute('innerHTML'))
+    print(type(element.get_attribute('innerHTML')))
 except TimeoutException:
     print("Timed out waiting for page to load")
 
