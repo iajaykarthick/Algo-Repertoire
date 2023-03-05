@@ -1,4 +1,6 @@
+import os
 import sys
+
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
@@ -19,6 +21,12 @@ try:
     WebDriverWait(driver, timeout).until(element_present)
     element = driver.find_element(By.XPATH, question_text_xpath)
     question_text = element.get_attribute('innerHTML')
+    
+    isExist = os.path.exists(output_files_path)
+    if not isExist:
+        # Create a new directory because it does not exist
+        os.makedirs(output_files_path)
+        print("The new directory is created!")
     # Writing to file
     with open(f"{output_files_path}/test.md", "w") as file1:
         # Writing data to a file
