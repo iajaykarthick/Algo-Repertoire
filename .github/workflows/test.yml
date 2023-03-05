@@ -16,7 +16,7 @@ jobs:
       with:
         path: "leetcode-contests/requirements.txt"
     - name: Test
-      run: /
+      run:
         python leetcode-contests/test.py
         
     
