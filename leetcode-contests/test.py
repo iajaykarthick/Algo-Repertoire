@@ -22,16 +22,19 @@ finally:
     element = driver.find_element(By.XPATH, '//*[@id="qd-content"]/div[1]/div/div/div/div[2]/div/div/div[3]/div')
     print(element.get_attribute('innerHTML'))
 
+driver.get("https://leetcode.com/problems/longest-palindromic-substring/")
 timeout = 3
 topics_xpath = '//*[@id="qd-content"]/div[1]/div/div/div/div[2]/div/div/div[8]/div/div[2]/div'
 try:
     element_present = EC.presence_of_element_located((By.XPATH, topics_xpath))
     WebDriverWait(driver, timeout).until(element_present)
+    print("Page loaded")
+    element = driver.find_element(By.XPATH, topics_xpath)
+    print(element.get_attribute('innerHTML'))
 except TimeoutException:
     print("Timed out waiting for page to load")
 finally:
     print("Page loaded")
-    element = driver.find_element(By.XPATH, topics_xpath)
-    print(element.get_attribute('innerHTML'))
+    
 
 driver.quit()
