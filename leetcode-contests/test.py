@@ -18,7 +18,11 @@ try:
     element_present = EC.presence_of_element_located((By.XPATH, question_text_xpath))
     WebDriverWait(driver, timeout).until(element_present)
     element = driver.find_element(By.XPATH, question_text_xpath)
-    print(type(element.get_attribute('innerHTML')))
+    question_text = element.get_attribute('innerHTML')
+    # Writing to file
+    with open("leetcode-contests/test.md", "w") as file1:
+        # Writing data to a file
+        file1.write(question_text)
 except TimeoutException:
     print("Timed out waiting for page to load")
 
