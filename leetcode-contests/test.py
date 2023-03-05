@@ -23,7 +23,7 @@ finally:
     print(element.get_attribute('innerHTML'))
 
 driver.get("https://leetcode.com/problems/longest-palindromic-substring/")
-timeout = 3
+timeout = 10
 topics_xpath = '//*[@id="qd-content"]/div[1]/div/div/div/div[2]/div/div/div[8]/div/div[2]/div'
 try:
     element_present = EC.presence_of_element_located((By.XPATH, topics_xpath))
