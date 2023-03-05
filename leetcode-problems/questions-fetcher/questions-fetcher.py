@@ -12,7 +12,6 @@ from selenium.webdriver.support import expected_conditions as EC
 
 options = Options()
 options.add_argument("--headless=new")
-driver = webdriver.Chrome(options=options)
 output_files_path = 'leetcode-problems/problems'
 question_text_xpath = '//*[@id="qd-content"]/div[1]/div/div/div/div[2]/div/div/div[3]/div'
 
@@ -34,6 +33,8 @@ for question_stat in data['stat_status_pairs'][:100]:
     question_title_slug = question['question__title_slug']
     URL = f"https://leetcode.com/problems/{question_title_slug}"
     filename = f"{output_files_path}/{question_id}_{question_title.replace(' ', '_')}.md"
+    
+    driver = webdriver.Chrome(options=options)
     driver.get(URL)
     time.sleep(10)
     timeout = 4
