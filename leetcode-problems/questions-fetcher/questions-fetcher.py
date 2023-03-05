@@ -1,4 +1,5 @@
 import os
+import time
 import sys
 import requests
 
@@ -25,7 +26,8 @@ if not isExist:
 URL = "https://leetcode.com/api/problems/algorithms/"
 response = requests.get(URL)
 data = response.json()
-for question_stat in data['stat_status_pairs']:
+
+for question_stat in data['stat_status_pairs'][:100]:
     question = question_stat['stat']
     question_id = question['question_id']
     question_title = question['question__title']
@@ -47,11 +49,11 @@ for question_stat in data['stat_status_pairs']:
             file1.write(question_text)
     except TimeoutException:
         print("Timed out waiting for page to load")
+        
+    driver.close()
+    time.sleep(3)
 
 # Writing to file
 with open("leetcode-problems/questions-fetcher/logtrace.log", "w") as file1:
     # Writing data to a file
     file1.write("test")
-
-# write content to md file
-driver.quit()
