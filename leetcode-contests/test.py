@@ -20,4 +20,7 @@ try:
 except TimeoutException:
     print("Timed out waiting for page to load")
 
+# write content to md file
+
+
 driver.quit()
