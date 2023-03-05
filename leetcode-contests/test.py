@@ -15,7 +15,7 @@ for li in soup.find_all('ul', {"class": "list-group hover-panel contest-question
         
 for link in links:
     URL = 'https://leetcode.com' + link
-    driver.get("https://leetcode.com/contest/weekly-contest-334/")
+    driver.get(URL)
     soup = BeautifulSoup(driver.page_source, "html.parser")
     print(soup.title)
 driver.quit()
