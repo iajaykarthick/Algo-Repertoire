@@ -22,7 +22,6 @@ The sum of the chemistry of all the teams is: 1 * 5 + 2 * 4 + 3 * 3 = 5 + 8 + 9 
 The two players form a team with a total skill of 7.
 The chemistry of the team is 3 * 4 = 12.
 </pre>
-
 <p><strong class="example">Example 3:</strong></p>
 
 <pre><strong>Input:</strong> skill = [1,1,2,3]
