@@ -24,5 +24,3 @@ except TimeoutException:
 
 # write content to md file
 driver.quit()
-
-sys.exit(9)
