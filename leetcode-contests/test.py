@@ -1,3 +1,5 @@
+import sys
+
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
@@ -21,6 +23,6 @@ except TimeoutException:
     print("Timed out waiting for page to load")
 
 # write content to md file
-
-
 driver.quit()
+
+sys.exit(9)

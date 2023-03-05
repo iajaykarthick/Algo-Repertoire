@@ -18,11 +18,12 @@ jobs:
     - name: Test
       run: |
         python leetcode-contests/test.py
+        echo $?
         git config user.name iajaykarthick
         git config user.email ajaykarthick483@gmail.com
         git add .
         git commit -m "fetched leetcode questions"
-        git push
+        git push origin main
           
     
       
