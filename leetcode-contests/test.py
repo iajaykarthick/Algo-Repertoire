@@ -24,7 +24,7 @@ finally:
 
 driver.get("https://leetcode.com/problems/longest-palindromic-substring/")
 timeout = 10
-topics_xpath = '//*[@id="qd-content"]/div[1]/div/div/div/div[2]/div/div/div[8]/div/div[2]/div'
+topics_xpath = '//*[@id="qd-content"]/div[1]/div/div/div/div[2]/div/div/div[8]/div'
 try:
     element_present = EC.presence_of_element_located((By.XPATH, topics_xpath))
     WebDriverWait(driver, timeout).until(element_present)
