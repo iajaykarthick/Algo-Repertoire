@@ -54,3 +54,26 @@
 </ul>
 
 <p>Return <em>the <strong>total number</strong> of ways to split</em> <code>ranges</code> <em>into two groups</em>. Since the answer may be very large, return it <strong>modulo</strong> <code>10<sup>9</sup> + 7</code>.</p>
+
+
+### 2581. Count Number of Possible Root Nodes
+<img src="https://img.shields.io/badge/Hard-E96479.svg">
+
+[Solution ](2581.%20Count%20Number%20of%20Possible%20Root%20Nodes.md)
+
+<div class="question-content default-content">
+              <p>Alice has an undirected tree with <code>n</code> nodes labeled from <code>0</code> to <code>n - 1</code>. The tree is represented as a 2D integer array <code>edges</code> of length <code>n - 1</code> where <code>edges[i] = [a<sub>i</sub>, b<sub>i</sub>]</code> indicates that there is an edge between nodes <code>a<sub>i</sub></code> and <code>b<sub>i</sub></code> in the tree.</p>
+
+<p>Alice wants Bob to find the root of the tree. She allows Bob to make several <strong>guesses</strong> about her tree. In one guess, he does the following:</p>
+
+<ul>
+	<li>Chooses two <strong>distinct</strong> integers <code>u</code> and <code>v</code> such that there exists an edge <code>[u, v]</code> in the tree.</li>
+	<li>He tells Alice that <code>u</code> is the <strong>parent</strong> of <code>v</code> in the tree.</li>
+</ul>
+
+<p>Bob's guesses are represented by a 2D integer array <code>guesses</code> where <code>guesses[j] = [u<sub>j</sub>, v<sub>j</sub>]</code> indicates Bob guessed <code>u<sub>j</sub></code> to be the parent of <code>v<sub>j</sub></code>.</p>
+
+<p>Alice being lazy, does not reply to each of Bob's guesses, but just says that <strong>at least</strong> <code>k</code> of his guesses are <code>true</code>.</p>
+
+<p>Given the 2D integer arrays <code>edges</code>, <code>guesses</code> and the integer <code>k</code>, return <em>the <strong>number of possible nodes</strong> that can be the root of Alice's tree</em>. If there is no such tree, return <code>0</code>.</p>
+</div>
