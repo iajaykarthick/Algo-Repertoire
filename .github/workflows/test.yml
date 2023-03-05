@@ -17,13 +17,13 @@ jobs:
         path: "leetcode-contests/requirements.txt"
     - name: Test
       - run: |
-        python leetcode-contests/test.py
-        date > generated.txt
-        git config user.name github-actions
-        git config user.email github-actions@github.com
-        git add .
-        git commit -m "generated"
-        git push
+          python leetcode-contests/test.py
+          date > generated.txt
+          git config user.name iajaykarthick
+          git config user.email ajaykarthick483@gmail.com
+          git add .
+          git commit -m "generated"
+          git push
         
     
       
