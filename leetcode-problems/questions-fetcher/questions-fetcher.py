@@ -27,7 +27,7 @@ except TimeoutException:
     print("Timed out waiting for page to load")
 
 # Writing to file
-with open("leetcode-problems/questions-fetcher/test.log", "w") as file1:
+with open("leetcode-problems/questions-fetcher/logtrace.log", "w") as file1:
     # Writing data to a file
     file1.write("test")
 
