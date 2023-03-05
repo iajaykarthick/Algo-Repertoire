@@ -1,28 +1,28 @@
-name: test
+# name: test
 
-on:
-  push:
-    branches: [ main ]
+# on:
+#   push:
+#     branches: [ main ]
     
   
-jobs:
-  build:
-    runs-on: ubuntu-latest
+# jobs:
+#   build:
+#     runs-on: ubuntu-latest
       
-    steps:
-    - uses: actions/checkout@v3
-    - name: Install Python dependencies
-      uses: py-actions/py-dependency-install@v4
-      with:
-        path: "leetcode-problems/questions-fetcher/requirements.txt"
-    - name: Test
-      run: |
-        python leetcode-problems/questions-fetcher/questions-fetcher.py
-        git config user.name iajaykarthick
-        git config user.email ajaykarthick483@gmail.com
-        git add .
-        git commit -m "fetched leetcode questions"
-        git push origin main
+#     steps:
+#     - uses: actions/checkout@v3
+#     - name: Install Python dependencies
+#       uses: py-actions/py-dependency-install@v4
+#       with:
+#         path: "leetcode-problems/questions-fetcher/requirements.txt"
+#     - name: Test
+#       run: |
+#         python leetcode-problems/questions-fetcher/questions-fetcher.py
+#         git config user.name iajaykarthick
+#         git config user.email ajaykarthick483@gmail.com
+#         git add .
+#         git commit -m "fetched leetcode questions"
+#         git push origin main
           
     
       
