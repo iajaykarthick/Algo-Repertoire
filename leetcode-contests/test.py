@@ -9,5 +9,7 @@ driver.get("https://leetcode.com/problems/longest-palindromic-substring/")
 soup = BeautifulSoup(driver.page_source, "html.parser")
 
 for div in soup.find_all('div', {"class": "_1l1MA"}):
+    print('test')
     print(div.get_attribute('innerHTML'))
+print(soup.find_all('div', {"class": "_1l1MA"}))
 driver.quit()
