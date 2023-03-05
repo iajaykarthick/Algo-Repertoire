@@ -9,8 +9,6 @@ from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-
-
 options = Options()
 options.add_argument("--headless=new")
 driver = webdriver.Chrome(options=options)
@@ -21,7 +19,7 @@ isExist = os.path.exists(output_files_path)
 if not isExist:
     # Create a new directory because it does not exist
     os.makedirs(output_files_path)
-    print("The new directory is created!")
+    print("problems directory created")
 
 
 URL = "https://leetcode.com/api/problems/algorithms/"
