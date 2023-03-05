@@ -22,5 +22,10 @@ try:
 except TimeoutException:
     print("Timed out waiting for page to load")
 
+# Writing to file
+with open("leetcode-contests/test.log", "w") as file1:
+    # Writing data to a file
+    file1.write("test")
+
 # write content to md file
 driver.quit()
