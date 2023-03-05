@@ -8,15 +8,7 @@ options.add_argument("--headless=new")
 driver = webdriver.Chrome(options=options)
 driver.get("https://leetcode.com/problems/longest-palindromic-substring/")
 soup = BeautifulSoup(driver.page_source, "html.parser")
-links = []
 
-for li in soup.find_all('ul', {"class": "list-group hover-panel contest-question-list"})[0].find_all("li", {"class": "list-group-item"}):
-    for a in li.find_all('a'):
-        links.append(a['href'])
-        
-for link in links:
-    URL = 'https://leetcode.com' + link
-    driver.get(URL)
-    soup = BeautifulSoup(driver.page_source, "html.parser")
-    print(soup.title)
+for div in soup.find_all('div', {"class": "list-group hover-panel contest-question-list"}):
+    print(div.get_attribute('innerHTML'))
 driver.quit()
