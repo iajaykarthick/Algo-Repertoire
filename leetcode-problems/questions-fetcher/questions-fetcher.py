@@ -35,8 +35,8 @@ for question_stat in data['stat_status_pairs'][:100]:
     URL = f"https://leetcode.com/problems/{question_title_slug}"
     filename = f"{output_files_path}/{question_id}_{question_title.replace(' ', '_')}.md"
     driver.get(URL)
-    
-    timeout = 3
+    time.sleep(10)
+    timeout = 4
     try:
         element_present = EC.presence_of_element_located((By.XPATH, question_text_xpath))
         WebDriverWait(driver, timeout).until(element_present)
@@ -51,7 +51,7 @@ for question_stat in data['stat_status_pairs'][:100]:
         print("Timed out waiting for page to load")
         
     driver.close()
-    time.sleep(3)
+    time.sleep(10)
 
 # Writing to file
 with open("leetcode-problems/questions-fetcher/logtrace.log", "w") as file1:
