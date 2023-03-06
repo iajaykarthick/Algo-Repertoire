@@ -12,6 +12,15 @@ from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
+from selenium.webdriver.support.ui import WebDriverWait
+
+def find(driver):
+    element = driver.find_element(By.XPATH, question_text_xpath)
+    if element:
+        return element
+    else:
+        return False
+
 options = Options() 
 options.add_argument("-headless") 
 output_files_path = 'leetcode-problems/problems'
@@ -28,7 +37,7 @@ URL = "https://leetcode.com/api/problems/algorithms/"
 response = requests.get(URL)
 data = response.json()
 
-for question_stat in data['stat_status_pairs'][:100]:
+for question_stat in data['stat_status_pairs'][:200]:
     question = question_stat['stat']
     question_id = question['question_id']
     if str(question_id) in probs_number:
@@ -46,7 +55,10 @@ for question_stat in data['stat_status_pairs'][:100]:
     try:
         element_present = EC.presence_of_element_located((By.XPATH, question_text_xpath))
         WebDriverWait(driver, timeout).until(element_present)
-        element = driver.find_element(By.XPATH, question_text_xpath)
+        
+        element = WebDriverWait(driver, 5).until(find)
+        
+        
         question_text = element.get_attribute('innerHTML')
         
         # Writing to file
