@@ -14,7 +14,7 @@ Consider there exists an optimal solution of arranging the n words $1, 2, \dots 
 
 Obviously the last line in the optimal solution ends with word $n$. Let the starting word of the last optimal line be word $m$.
 
-Hence the last optimal line looks like $word_m word_{m+1} \dots word_n$.
+Hence the last optimal line looks like $word_m \text{ } word_{m+1} \text{ } \dots \text{ } word_n$.
 Now, if we remove the last optimal line from the optimal solution, the optimal solution is left with the words $1$ through word $m-1$ in the optimal arrangment with minimum cost. In other words, it is the optimal solution to the subproblem of size $m-1$.
 
 Thus, there exists the optimal substructure. 
