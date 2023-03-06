@@ -1,3 +1,5 @@
+## Minimum Score by Changing Two Elements
+[Leetcode](https://leetcode.com/problems/minimum-score-by-changing-two-elements)
 <p>You are given a <strong>0-indexed</strong> integer array <code>nums</code>.</p>
 
 <ul>

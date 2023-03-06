@@ -1,3 +1,5 @@
+## Count Distinct Numbers on Board
+[Leetcode](https://leetcode.com/problems/count-distinct-numbers-on-board)
 <p>You are given a positive integer <code>n</code>, that is initially placed on a board. Every day, for <code>10<sup>9</sup></code> days, you perform the following procedure:</p>
 
 <ul>

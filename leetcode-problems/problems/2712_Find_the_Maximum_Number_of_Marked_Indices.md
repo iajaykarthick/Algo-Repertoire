@@ -1,3 +1,5 @@
+## Find the Maximum Number of Marked Indices
+[Leetcode](https://leetcode.com/problems/find-the-maximum-number-of-marked-indices)
 <p>You are given a <strong>0-indexed</strong> integer array <code>nums</code>.</p>
 
 <p>Initially, all of the indices are unmarked. You are allowed to make this operation any number of times:</p>

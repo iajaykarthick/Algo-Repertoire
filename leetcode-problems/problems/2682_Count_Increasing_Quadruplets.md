@@ -1,3 +1,5 @@
+## Count Increasing Quadruplets
+[Leetcode](https://leetcode.com/problems/count-increasing-quadruplets)
 <p>Given a <strong>0-indexed</strong> integer array <code>nums</code> of size <code>n</code> containing all numbers from <code>1</code> to <code>n</code>, return <em>the number of increasing quadruplets</em>.</p>
 
 <p>A quadruplet <code>(i, j, k, l)</code> is increasing if:</p>

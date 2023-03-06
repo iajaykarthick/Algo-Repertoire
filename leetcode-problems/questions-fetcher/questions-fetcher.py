@@ -4,14 +4,16 @@ import sys
 import requests
 
 from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.firefox.service import Service as FirefoxService
+from webdriver_manager.firefox import GeckoDriverManager
+from selenium.webdriver.firefox.options import Options
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-options = Options()
-options.add_argument("--headless=new")
+options = Options() 
+options.add_argument("-headless") 
 output_files_path = 'leetcode-problems/problems'
 question_text_xpath = '//*[@id="qd-content"]/div[1]/div/div/div/div[2]/div/div/div[3]/div'
 
@@ -20,7 +22,7 @@ if not isExist:
     # Create a new directory because it does not exist
     os.makedirs(output_files_path)
     print("problems directory created")
-
+probs_number = [file.split("_")[0] for file in os.listdir(output_files_path)]
 
 URL = "https://leetcode.com/api/problems/algorithms/"
 response = requests.get(URL)
@@ -29,12 +31,16 @@ data = response.json()
 for question_stat in data['stat_status_pairs'][:100]:
     question = question_stat['stat']
     question_id = question['question_id']
+    if str(question_id) in probs_number:
+        print(f"{question_id} already exists")
+        continue
     question_title = question['question__title']
     question_title_slug = question['question__title_slug']
     URL = f"https://leetcode.com/problems/{question_title_slug}"
     filename = f"{output_files_path}/{question_id}_{question_title.replace(' ', '_')}.md"
     
-    driver = webdriver.Chrome(options=options)
+    # driver = webdriver.Chrome("/opt/homebrew/bin/chromedriver", options=options)
+    driver = webdriver.Firefox(service=FirefoxService(GeckoDriverManager().install()), options=options)
     driver.get(URL)
     timeout = 4
     try:
@@ -46,7 +52,10 @@ for question_stat in data['stat_status_pairs'][:100]:
         # Writing to file
         with open(filename, "w") as file1:
             # Writing data to a file
+            file1.write(f"## {question_title}\n")
+            file1.write(f"[Leetcode]({URL})\n")
             file1.write(question_text)
+            
     except TimeoutException:
         print("Timed out waiting for page to load")
         

@@ -1,3 +1,5 @@
+## Take Gifts From the Richest Pile
+[Leetcode](https://leetcode.com/problems/take-gifts-from-the-richest-pile)
 <p>You are given an integer array <code>gifts</code> denoting the number of gifts in various piles. Every second, you do the following:</p>
 
 <ul>

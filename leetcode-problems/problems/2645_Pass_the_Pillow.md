@@ -1,3 +1,5 @@
+## Pass the Pillow
+[Leetcode](https://leetcode.com/problems/pass-the-pillow)
 <p>There are <code>n</code> people standing in a line labeled from <code>1</code> to <code>n</code>. The first person in the line is holding a pillow initially. Every second, the person holding the pillow passes it to the next person standing in the line. Once the pillow reaches the end of the line, the direction changes, and people continue passing the pillow in the opposite direction.</p>
 
 <ul>

@@ -1,3 +1,5 @@
+## Find the String with LCP
+[Leetcode](https://leetcode.com/problems/find-the-string-with-lcp)
 <p>We define the <code>lcp</code> matrix of any <strong>0-indexed</strong> string <code>word</code> of <code>n</code> lowercase English letters as an <code>n x n</code> grid such that:</p>
 
 <ul>

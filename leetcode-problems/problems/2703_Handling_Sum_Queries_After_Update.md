@@ -1,3 +1,5 @@
+## Handling Sum Queries After Update
+[Leetcode](https://leetcode.com/problems/handling-sum-queries-after-update)
 <p>You are given two <strong>0-indexed</strong> arrays <code>nums1</code> and <code>nums2</code> and a 2D array <code>queries</code> of queries. There are three types of queries:</p>
 
 <ol>
