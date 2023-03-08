@@ -24,6 +24,7 @@ def find(driver):
 options = Options() 
 options.add_argument("-headless") 
 output_files_path = 'leetcode-problems/problems'
+premium_files_path= 'leetcode-problems/problems/premium'
 question_text_xpath = '//*[@id="qd-content"]/div[1]/div/div/div/div[2]/div/div/div[3]/div'
 
 isExist = os.path.exists(output_files_path)        
@@ -32,6 +33,12 @@ if not isExist:
     os.makedirs(output_files_path)
     print("problems directory created")
 probs_number = [file.split("_")[0] for file in os.listdir(output_files_path)]
+
+isExist = os.path.exists(premium_files_path)        
+if not isExist:
+    # Create a new directory because it does not exist
+    os.makedirs(premium_files_path)
+    print("premium directory created")
 
 URL = "https://leetcode.com/api/problems/algorithms/"
 response = requests.get(URL)
@@ -60,13 +67,21 @@ for question_stat in data['stat_status_pairs'][:200]:
         
         
         question_text = element.get_attribute('innerHTML')
-        
-        # Writing to file
-        with open(filename, "w") as file1:
-            # Writing data to a file
-            file1.write(f"## {question_title}\n")
-            file1.write(f"[Leetcode]({URL})\n")
-            file1.write(question_text)
+        if question_text:
+            # Writing to file
+            with open(filename, "w") as file1:
+                # Writing data to a file
+                file1.write(f"## {question_title}\n")
+                file1.write(f"[Leetcode]({URL})\n")
+                file1.write(question_text)
+        else:
+            print(f'question_text not found {question_id} {question_title_slug} {URL}')
+            filename = f"{premium_files_path}/{question_id}_{question_title.replace(' ', '_')}.md"
+                        # Writing to file
+            with open(filename, "w") as file1:
+                # Writing data to a file
+                file1.write(f"## {question_title}\n")
+                file1.write(f"[Leetcode]({URL})\n")
             
     except TimeoutException:
         print("Timed out waiting for page to load")
