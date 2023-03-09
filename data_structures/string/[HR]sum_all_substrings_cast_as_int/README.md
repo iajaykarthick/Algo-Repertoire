@@ -84,7 +84,7 @@ $sum[i] = sum[i-1] * 10 + i * int(s_i) \text{ where } 1 \leq i \leq n$
 $sum[0] = 0$
 
 Hence the sum of all the substrings of string $S$ casted as integer is as follows 
-$$ sum(substrings(S)) = \displaystyle\sum_{i = 1}^{n} sum[i-1] * 10 + i * int(s_i)$$
+$$sum(substrings(S)) = \displaystyle\sum_{i = 1}^{n} sum[i-1] * 10 + i * int(s_i)$$
 
 
 ```
@@ -97,7 +97,7 @@ sum_substrings(S) {
     for i = 1 to n:
         sum_substr_ends_at_i = (sum_substr_ends_at_i * 10) + ((i+1) * int(number[i]))
         total += sum_substr_ends_at_i
-        
+
     return total
 }   
 ```
