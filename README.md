@@ -1,5 +1,13 @@
 # Algo-Repertoire
 
+
+## DP problems
+* [Text Justification](DP/TextJustification/)
+* [Sum of all substrings casted as int](DP/sum_all_substrings_cast_as_int/)
+* [Break a string](DP/break_string/)
+
+
+
 ## Random - Yet to be categorized
 
 * [Add one to list of integers considered as a single integer](Random/Add_One_list_considered_as_integer.py)
