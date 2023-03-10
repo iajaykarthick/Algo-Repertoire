@@ -1,6 +1,11 @@
 # Algo-Repertoire
 
 
+## Data Structures
+* [Stack](data_structures/stack/)
+* [Queue](data_structures/queue/)
+* [LinkedList](data_structures/linked_list/)
+
 ## DP problems
 * [Text Justification](DP/TextJustification/)
 * [Sum of all substrings casted as int](DP/sum_all_substrings_cast_as_int/)
