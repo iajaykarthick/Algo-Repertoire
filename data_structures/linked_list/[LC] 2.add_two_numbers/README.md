@@ -42,7 +42,7 @@
 
 Intuition : Recursively add corresponding digits in both the lists and the carry digit if any. Once reach the base, return the node with the result digit as the value and catch it by the next pointer of the previous recursive call's node.
 
-```
+```python
  def add(l1, l2, carry):
 	if l1 is None and l2 is None and carry == 0:
 		return
