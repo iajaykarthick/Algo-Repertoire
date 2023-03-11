@@ -32,17 +32,30 @@
 Consider the list elements $l_1, l_2, l_3, \dots l_n$
 
 When 
+
 $k = 0,$ new head is $l_1$ ( no change )
+
 $k = 1,$ new head is $l_n$ ( $l_n.next = l_1$ )
+
 $k = 2,$ new head is $l_{n-1}$ ( $l_n.next = l_1$ )
+
 $k = 3,$ new head is $l_{n-2}$ ( $l_n.next = l_1$ )
+
 $\vdots$
+
 $k = n-1,$ new head is $l_{2}$ ( $l_n.next = l_1$ )
+
 $k = n,$ new head is $l_{1}$ ( no change )
 
+
 $k$ can be greater than n and we need to start again in rotation.
+
 In general, new head position is new_head_pos $= n - (k \mod n) + 1$.
-There are some corner cases like $k = 0, (k \mod n) = 0 \text{ and } n = 1$. For all these corner cases, we don't need to change the head node.
+
+There are some corner cases like $k = 0, (k \mod n) = 0 \text{ and } n = 1$. 
+
+For all these corner cases, we don't need to change the head node.
+
 
 #### Pseudocode
 ```python
