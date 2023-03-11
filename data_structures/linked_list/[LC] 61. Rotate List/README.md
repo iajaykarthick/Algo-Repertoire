@@ -45,7 +45,7 @@ In general, new head position is new_head_pos $= n - (k \mod n) + 1$.
 There are some corner cases like $k = 0, (k \mod n) = 0 \text{ and } n = 1$. For all these corner cases, we don't need to change the head node.
 
 #### Pseudocode
-```{python}
+```python
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, val=0, next=None):
