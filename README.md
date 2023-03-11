@@ -17,6 +17,7 @@
 * [Remove Nth Node from end](data_structures/linked_list/[LC]%2019.%20Remove%20Nth%20Node%20From%20End%20of%20List)
 * [Rotate List](data_structures/linked_list/[LC]%2061.%20Rotate%20List)
 * [Delete the Middle Node](data_structures/linked_list/[LC]%202095.%20Delete%20the%20Middle%20Node%20of%20a%20Linked%20List)
+* [Swap nodes in pairs](data_structures/linked_list/[LC]%2024.%20Swap%20Nodes%20in%20Pairs)
 
 
 ## DP problems
