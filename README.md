@@ -5,6 +5,11 @@
 * [Stack](data_structures/stack/)
 * [Queue](data_structures/queue/)
 * [LinkedList](data_structures/linked_list/)
+* [Array](Arrays/)
+
+## Array Manipulation
+* [Rotate an array](Arrays/Rotate_An_Array/)
+* [Reverse an array](Arrays/Reverse_An_Array/)
 
 ## Linkedlist problems
 * [Add two numbers](data_structures/linked_list/[LC]%202.add_two_numbers)
