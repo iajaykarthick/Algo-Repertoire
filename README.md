@@ -6,6 +6,11 @@
 * [Queue](data_structures/queue/)
 * [LinkedList](data_structures/linked_list/)
 
+## Linkedlist problems
+* [Add two numbers](data_structures/linked_list/[LC]%202.add_two_numbers)
+* [Remove Nth Node from end](data_structures/linked_list/[LC]%2019.%20Remove%20Nth%20Node%20From%20End%20of%20List)
+* [Rotate List](data_structures/linked_list/[LC]%2061.%20Rotate%20List)
+
 ## DP problems
 * [Text Justification](DP/TextJustification/)
 * [Sum of all substrings casted as int](DP/sum_all_substrings_cast_as_int/)
