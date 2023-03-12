@@ -1,5 +1,7 @@
 ## 2586. Count the Number of Vowel Strings in Range
 
+[Leetcode](https://leetcode.com/problems/count-the-number-of-vowel-strings-in-range/)
+
 <div class="question-content default-content">
               <p>You are given a <strong>0-indexed</strong> array of string <code>words</code> and two integers <code>left</code> and <code>right</code>.</p>
 
