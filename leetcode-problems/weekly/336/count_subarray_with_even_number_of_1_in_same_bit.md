@@ -1,3 +1,6 @@
+## 2588. Count the Number of Beautiful Subarrays
+[Leetcode](https://leetcode.com/problems/count-the-number-of-beautiful-subarrays/)
+
 <div class="question-content default-content">
               <p>You are given a <strong>0-indexed</strong> integer array <code>nums</code>. In one operation, you can:</p>
 
