@@ -11,7 +11,7 @@
 * [Rotate an array](Arrays/Rotate_An_Array/)
 * [Reverse an array](Arrays/Reverse_An_Array/)
 
-## Linkedlist problems
+## Linked List problems
 * [Add two numbers](data_structures/linked_list/[LC]%202.add_two_numbers)
 * [Insert node at Nth position](data_structures/linked_list/[HR]%20insert-a-node-at-a-specific-position-in-a-linked-list/README.md)
 * [Remove Nth Node from end](data_structures/linked_list/[LC]%2019.%20Remove%20Nth%20Node%20From%20End%20of%20List)
