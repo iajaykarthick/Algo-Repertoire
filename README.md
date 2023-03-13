@@ -7,6 +7,9 @@
 * [LinkedList](data_structures/linked_list/)
 * [Array](Arrays/)
 
+## Stack
+* [Implement Queue Using stacks]
+
 ## Array Manipulation
 * [Rotate an array](Arrays/Rotate_An_Array/)
 * [Reverse an array](Arrays/Reverse_An_Array/)
