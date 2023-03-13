@@ -8,7 +8,7 @@
 * [Array](Arrays/)
 
 ## Stack
-* [Implement Queue Using stacks]
+* [Implement Queue Using stacks](data_structures/stack/[LC]232.%20Implement%20Queue%20using%20Stacks)
 
 ## Array Manipulation
 * [Rotate an array](Arrays/Rotate_An_Array/)
